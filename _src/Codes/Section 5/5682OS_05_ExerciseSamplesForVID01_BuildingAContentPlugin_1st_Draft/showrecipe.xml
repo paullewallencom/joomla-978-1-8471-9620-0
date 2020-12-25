@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+    <name>Show Recipe</name>
+    <version>1.0.1</version>
+    <description>Show Recipe in content</description>
+    <files>
+        <filename plugin="showrecipe">showrecipe.php</filename>
+        <filename plugin="showrecipe">index.html</filename>
+    </files>
+</extension>

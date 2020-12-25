@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_goodcook</name>
+	<description>COM_GOODCOOK_XML_DESCRIPTION</description>
+	<creationDate>April 2013</creationDate>
+	<author>Packt Publishing Limited</author>
+	<license>GNU General Public License version 2 or later</license> 
+	<version>1.0.0</version>
+	
+	<install> <!-- Runs on install -->
+			<sql>
+					<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+			<sql>
+					<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+			</sql>
+	</uninstall>
+	
+	
+	<files folder="site">
+		<filename>goodcook.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_goodcook.ini</language>
+	</languages>
+
+	<administration>
+		<menu>com_goodcook</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+		</submenu>
+		<files folder="admin">
+			<filename>goodcook.php</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>controllers</folder>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_goodcook.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_goodcook.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="editors-xtd">
+	<name>plg_editors-xtd_recipe</name>
+	<version>1.0.0</version>
+	<description>Select Recipe</description>
+	<files>
+		<filename plugin="recipe">recipe.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

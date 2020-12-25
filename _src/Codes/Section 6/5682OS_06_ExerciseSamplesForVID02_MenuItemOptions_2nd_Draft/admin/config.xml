@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="ordering"
+        label="COM_GOODCOOK_ORDERING_LABEL"
+        description="COM_GOODCOOK_ORDERING_DESC"
+        >
+    <field name="orderby_pri"
+            type="list"
+            default="none"
+            label="JGLOBAL_CATEGORY_ORDER_LABEL"
+            description="JGLOBAL_CATEGORY_ORDER_DESC">
+            <option
+                value="none">JGLOBAL_NO_ORDER</option>
+            <option
+                value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+            <option
+                value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+            <option
+                value="order">JGLOBAL_CATEGORY_MANAGER_ORDER</option>
+        </field>
+
+        <field name="orderby_sec"
+            type="list"
+            default="rdate"
+            label="COM_GOODCOOK_RECIPE_ORDER_LABEL"
+            description="JGLOBAL_Recipe_Order_Desc">
+            <option
+                value="rdate">JGLOBAL_MOST_RECENT_FIRST</option>
+            <option
+                value="date">JGLOBAL_OLDEST_FIRST</option>
+            <option
+                value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+            <option
+                value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+            <option
+                value="author">JGLOBAL_AUTHOR_ALPHABETICAL</option>
+            <option
+                value="rauthor">JGLOBAL_AUTHOR_REVERSE_ALPHABETICAL</option>
+        </field>
+
+        <field name="order_date" type="list"
+                default="published"
+                description="JGLOBAL_ORDERING_DATE_DESC"
+                label="JGLOBAL_ORDERING_DATE_LABEL"
+            >
+                <option value="created">JGLOBAL_CREATED</option>
+                <option value="modified">JGLOBAL_MODIFIED</option>
+                <option value="published">JPUBLISHED</option>
+            </field>
+
+    </fieldset>
+    <fieldset
+        name="recipes"
+        label="COM_GOODCOOK_RECIPES"
+        description="COM_GOODCOOK_CONFIG_RECIPE_SETTINGS_DESC">
+
+        <field
+            name="show_author"
+            type="radio"
+            class="btn-group"
+            label="JGLOBAL_SHOW_AUTHOR_LABEL"
+            description="JGLOBAL_SHOW_AUTHOR_DESC"
+            default="1">
+            <option
+                value="0">JHIDE</option>
+            <option
+                value="1">JSHOW</option>
+        </field>
+
+        <field
+            name="show_publish_date"
+            type="radio"
+            class="btn-group"
+            label="JGLOBAL_SHOW_PUBLISH_DATE_LABEL"
+            description="JGLOBAL_SHOW_PUBLISH_DATE_DESC"
+            default="1">
+            <option
+                value="0">JHIDE</option>
+            <option
+                value="1">JSHOW</option>
+        </field>
+
+    </fieldset>
+
+</config>

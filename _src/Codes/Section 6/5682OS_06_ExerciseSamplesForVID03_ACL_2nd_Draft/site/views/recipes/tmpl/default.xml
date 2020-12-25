@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_GOODCOOK_RECIPESLIST_VIEW_DEFAULT_TITLE">
+        <message>
+            <![CDATA[COM_GOODCOOK_RECIPESLIST_VIEW_DEFAULT_DESC]]>
+        </message>
+    </layout>
+	<fields name="params">
+		<fieldset name="ordering"
+			label="COM_GOODCOOK_ORDERING_LABEL"
+			description="COM_GOODCOOK_ORDERING_DESC"
+			>
+			<field name="orderby_sec"
+				type="list"
+				default=""
+				label="COM_GOODCOOK_RECIPE_ORDER_LABEL"
+				description="JGLOBAL_Recipe_Order_Desc"
+			 >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option
+					value="rdate">JGLOBAL_MOST_RECENT_FIRST</option>
+				<option
+					value="date">JGLOBAL_OLDEST_FIRST</option>
+				<option
+					value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+				<option
+					value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+				<option
+					value="author">JGLOBAL_AUTHOR_ALPHABETICAL</option>
+				<option
+					value="rauthor">JGLOBAL_AUTHOR_REVERSE_ALPHABETICAL</option>
+			</field>
+	
+			<field name="order_date" type="list"
+					default=""
+					description="JGLOBAL_ORDERING_DATE_DESC"
+					label="JGLOBAL_ORDERING_DATE_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="created">JGLOBAL_CREATED</option>
+				<option value="publish_up">JPUBLISHED</option>
+			</field>
+	
+		</fieldset>
+
+	</fields>
+
+</metadata>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>Foo Module</name>
+	<description>My first module</description>
+
+	<files>
+		<filename module="mod_foo">mod_foo.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+</extension>

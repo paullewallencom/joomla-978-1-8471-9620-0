@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_GOODCOOK_RECIPESLIST_VIEW_DEFAULT_TITLE">
+        <message>
+            <![CDATA[COM_GOODCOOK_RECIPESLIST_VIEW_DEFAULT_DESC]]>
+        </message>
+    </layout>
+
+	<fields name="params">
+		<fieldset 
+			name="basic"
+			addfieldpath="/administrator/components/com_goodcook/models/fields">
+
+				<field 
+					name="keyword" 
+					type="goodcookkeywords" 
+					label="Keyword" 
+					description="Select a Keyword"
+				/>
+
+		</fieldset>
+	</fields>
+
+</metadata>

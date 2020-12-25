@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="search">
+	<name>Search - Goodcook Recipes</name>
+	<description>Plugin Search - Goodcook Recipes</description>
+	<files>
+		<filename plugin="goodcook">goodcook.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					default="50"
+					description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC"
+					label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+					size="5"
+				/>
+
+				<field name="Itemid" type="menuitem"
+					class="btn-group"
+					default="0"
+					label="Select a menu item" 
+					description="Select a menu itemid to use for the links to recipes"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

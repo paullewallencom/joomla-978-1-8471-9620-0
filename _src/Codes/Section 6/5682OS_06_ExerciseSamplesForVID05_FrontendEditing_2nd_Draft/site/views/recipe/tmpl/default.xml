@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_GOODCOOK_RECIPE_VIEW_DEFAULT_TITLE">
+        <message>
+            <![CDATA[COM_GOODCOOK_RECIPE_VIEW_DEFAULT_DESC]]>
+        </message>
+    </layout>
+
+    <fields name="request">
+        <fieldset name="request" >
+			<field 
+				name="id" 
+				type="sql" 
+				label="Select a recipe" 
+				required="true"
+				query="SELECT id, title FROM #__goodcook_recipes" 
+				key_field="id" 
+				value_field="title" 
+			/>
+        </fieldset>
+    </fields>
+	<fields name="params">
+		<fieldset
+			name="recipe"
+			label="COM_GOODCOOK_RECIPE"
+			description="COM_GOODCOOK_CONFIG_RECIPE_SETTINGS_DESC">	
+	
+			<field
+				name="show_author"
+				type="radio"
+				class="btn-group"
+				label="JGLOBAL_SHOW_AUTHOR_LABEL"
+				description="JGLOBAL_SHOW_AUTHOR_DESC"
+				default="">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+	
+			<field
+				name="show_publish_date"
+				type="radio"
+				class="btn-group"
+				label="JGLOBAL_SHOW_PUBLISH_DATE_LABEL"
+				description="JGLOBAL_SHOW_PUBLISH_DATE_DESC"
+				default="">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

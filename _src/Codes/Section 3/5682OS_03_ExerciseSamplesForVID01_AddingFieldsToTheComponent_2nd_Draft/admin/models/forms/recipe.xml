@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields">
+		<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true" class="readonly"
+			description="JGLOBAL_FIELD_ID_DESC"/>
+		<field name="title" type="text" class="inputbox"
+			size="40" label="JGLOBAL_TITLE"
+			description="COM_GOODCOOK_FIELD_TITLE_DESC" required="true" />
+	    <field name="alias" type="text" label="JFIELD_ALIAS_LABEL"
+        	description="JFIELD_ALIAS_DESC" class="inputbox" 
+			size="45" labelclass="control-label" />
+		<field name="recipe" type="editor" buttons="true" hide="pagebreak,readmore"
+			class="inputbox"
+			filter="JComponentHelper::filterText"
+			label="COM_GOODCOOK_RECIPE" description="COM_GOODCOOK_FIELD_RECIPE_DESC" />
+		<field name="catid"
+               type="category"
+               extension="com_goodcook"
+               label="JCATEGORY"
+               description="JFIELD_CATEGORY_DESC"
+               class="inputbox"
+               required="true" />
+	</fieldset>
+	<fieldset name="metadata"
+		label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+		
+		<field name="metakey" type="textarea"
+			   label="JFIELD_META_KEYWORDS_LABEL" 
+			   description="JFIELD_META_KEYWORDS_DESC"
+			   class="inputbox" rows="3" cols="30" 
+			   labelclass="control-label"/>
+	
+		<field name="metadesc" type="textarea"
+			   label="JFIELD_META_DESCRIPTION_LABEL" 
+			   description="JFIELD_META_DESCRIPTION_DESC"
+			   class="inputbox" rows="3" cols="30" 
+			   labelclass="control-label"/>
+	
+	</fieldset>
+	<fieldset name="publishingoptions">
+		<field name="created" type="calendar" label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC" class="inputbox" size="22"
+			format="%Y-%m-%d %H:%M:%S" filter="user_utc" 
+			labelclass="control-label" />
+		<field name="created_by" type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL" 
+			description="JGLOBAL_FIELD_CREATED_BY_DESC" labelclass="control-label" />
+		<field name="created_by_alias" type="text"
+			label="JGLOBAL_FIELD_CREATED_BY_ALIAS_LABEL" 
+			description="JGLOBAL_FIELD_CREATED_BY_ALIAS_DESC"
+			class="inputbox" size="20" labelclass="control-label" />
+		<field name="publish_up" type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL" 
+			description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" labelclass="control-label" />
+		<field name="publish_down" type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL" 
+			description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" labelclass="control-label" />
+	</fieldset>
+</form>
+

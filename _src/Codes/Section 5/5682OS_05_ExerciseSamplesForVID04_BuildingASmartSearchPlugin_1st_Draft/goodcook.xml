@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="finder" method="upgrade">
+	<name>Smart Search - Goodcook Recipes</name>
+	<description>This plugin indexes Goodcook Recipes. </description>
+	<files>
+		<file plugin="goodcook">goodcook.php</file>
+    	<filename>index.html</filename>
+	</files>
+</extension>
